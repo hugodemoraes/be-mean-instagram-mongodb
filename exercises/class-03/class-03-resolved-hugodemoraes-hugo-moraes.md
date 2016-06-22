@@ -125,13 +125,6 @@ hugomoraes-ubuntu16(mongod-3.2.7) be-mean-instagram> db.pokemons.find(query)
   "_id": ObjectId("5769fa1915ffd6fe4fb4f402"),
   "name": "Pikachu",
   "description": "Rato elétrico bem fofinho",
-  "type": "electric",
-  "attack": 55,
-  "height": 0.4
-}
-{
-  "_id": ObjectId("5769fa2315ffd6fe4fb4f403"),
-  "name": "Bulbassauro",
   "description": "Chicote de trepadeira",
   "type": "grama",
   "attack": 49,
