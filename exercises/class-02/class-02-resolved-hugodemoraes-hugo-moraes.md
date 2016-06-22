@@ -231,5 +231,3 @@ hugomoraes-ubuntu16(mongod-3.2.7) be-mean-pokemons> db.pokemons.find(query)
 }
 Fetched 1 record(s) in 1ms
 ```
-
-## TEste de merge
