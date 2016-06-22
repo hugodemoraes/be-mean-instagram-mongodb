@@ -1,23 +1,23 @@
 # Tutorial GIT
 autor: Hugo de Moraes
 
--Acessar seu repositório local
+## Acessar seu repositório local
 ```
 cd /Repositories/be-mean-instagram-mongodb
 ```
--Verificar o status
+## Verificar o status
 ```
 git status
 ```
--Adicionar alterações
+## Adicionar alterações
 ```
 git add .
 ```
--Commit
+## Commit
 ```
 git commit -m 'Hugo de Moraes - MongoDb - Exercício "xx" - Resolvido'
 ```
--Subir
+## Subir
 ```
 git push -u
 ```
