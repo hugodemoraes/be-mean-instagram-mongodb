@@ -61,7 +61,7 @@ Fetched 2 record(s) in 2ms
 ## Listando pokemons com altura menor ou igual que 0.5 E do tipo grama
 
 ```
-hugomoraes-ubuntu16(mongod-3.2.7) be-mean-instagram> var query = {$and: [{height: {$lte: 0.5}},{type: 'grama'}]}
+hugomoraes-ubuntu16(mongod-3.2.7) be-mean-instagram> var query = {$and: [{height: {$lte: 0.5}},{type: /grama/i}]}
 hugomoraes-ubuntu16(mongod-3.2.7) be-mean-instagram> db.pokemons.find(query)
 {
   "_id": ObjectId("5769fa2315ffd6fe4fb4f403"),
@@ -77,7 +77,7 @@ Fetched 1 record(s) in 2ms
 ## Listando pokemons com o name 'Pikachu' OU com attack menor ou igual que 0.5
 
 ```
-hugomoraes-ubuntu16(mongod-3.2.7) be-mean-instagram> var query = {$or: [{name: 'Pikachu'},{attack: {$lte: 0.5}}]}
+hugomoraes-ubuntu16(mongod-3.2.7) be-mean-instagram> var query = {$or: [{name: /pikachu/i},{attack: {$lte: 0.5}}]}
 hugomoraes-ubuntu16(mongod-3.2.7) be-mean-instagram> db.pokemons.find(query)
 {
   "_id": ObjectId("5769fa1915ffd6fe4fb4f402"),
