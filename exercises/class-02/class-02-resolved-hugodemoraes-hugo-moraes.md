@@ -126,14 +126,13 @@ Vostro-5470(mongod-3.2.10) be-mean-pokemons> db.pokemons.find()
 Fetched 6 record(s) in 3ms
 ```
 
-## PAREI AQUI ##
 ## Buscando o pokemon e armazenando na variável
 ```
-hugomoraes-ubuntu16(mongod-3.2.7) be-mean-pokemons> var query = {nome:'Golbat'}
-hugomoraes-ubuntu16(mongod-3.2.7) be-mean-pokemons> var p = db.pokemons.findOne(query)
-hugomoraes-ubuntu16(mongod-3.2.7) be-mean-pokemons> p
+Vostro-5470(mongod-3.2.10) be-mean-pokemons> var query = {nome:'Golbat'}
+Vostro-5470(mongod-3.2.10) be-mean-pokemons> var p = db.pokemons.findOne(query)
+Vostro-5470(mongod-3.2.10) be-mean-pokemons> p
 {
-  "_id": ObjectId("5769ff241d743a73282a8627"),
+  "_id": ObjectId("57fc5e869b8cee38137a6751"),
   "nome": "Golbat",
   "description": "Morcego bizonhento",
   "type": "Poison",
@@ -145,11 +144,11 @@ hugomoraes-ubuntu16(mongod-3.2.7) be-mean-pokemons> p
 
 ## Modificando a description e salvando
 ```
-hugomoraes-ubuntu16(mongod-3.2.7) be-mean-pokemons> p.description = "Morcego bravo"
+Vostro-5470(mongod-3.2.10) be-mean-pokemons> p.description = "Morcego bravo"
 Morcego bravo
-hugomoraes-ubuntu16(mongod-3.2.7) be-mean-pokemons> p
+Vostro-5470(mongod-3.2.10) be-mean-pokemons> p
 {
-  "_id": ObjectId("5769ff241d743a73282a8627"),
+  "_id": ObjectId("57fc5e869b8cee38137a6751"),
   "nome": "Golbat",
   "description": "Morcego bravo",
   "type": "Poison",
@@ -157,16 +156,16 @@ hugomoraes-ubuntu16(mongod-3.2.7) be-mean-pokemons> p
   "height": 1.6,
   "defense": 70
 }
-hugomoraes-ubuntu16(mongod-3.2.7) be-mean-pokemons> db.pokemons.save(p)
-Updated 1 existing record(s) in 1ms
+Vostro-5470(mongod-3.2.10) be-mean-pokemons> db.pokemons.save(p)
+Updated 1 existing record(s) in 33ms
 WriteResult({
   "nMatched": 1,
   "nUpserted": 0,
   "nModified": 1
 })
-hugomoraes-ubuntu16(mongod-3.2.7) be-mean-pokemons> db.pokemons.find(query)
+Vostro-5470(mongod-3.2.10) be-mean-pokemons> db.pokemons.find(query)
 {
-  "_id": ObjectId("5769ff241d743a73282a8627"),
+  "_id": ObjectId("57fc5e869b8cee38137a6751"),
   "nome": "Golbat",
   "description": "Morcego bravo",
   "type": "Poison",
